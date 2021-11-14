@@ -7,7 +7,7 @@ from scipy.io import loadmat
 
 def load_white_noise_data(cell_id):
     data = loadmat('Data/elife-38841-fig4-data1-v2.mat')  # loadmat is a function in scipy.io
-    # data from Figure 4
+    # data from Figure 4 can be downloaded from https://doi.org/10.7554/eLife.38841.013
     # "Receptive field center-surround interactions mediate context-dependent spatial contrast encoding in the retina"
     # Maxwell H Turner, Gregory W Schwartz, Fred Rieke  DOI: https://doi.org/10.7554/eLife.38841
 
@@ -42,7 +42,8 @@ def load_white_noise_data(cell_id):
 
 
 def load_natural_data(cell_id):
-    data = loadmat('Data/elife-38841-fig7-data1-v2.mat') # data from Figure 4
+    data = loadmat('Data/elife-38841-fig7-data1-v2.mat') # data from Figure 7
+    # downloaded from https://doi.org/10.7554/eLife.38841.017
     # The structure contains excitatory current responses (baseline subtracted, in pA) of On and Off parasol RGCs
     # to center-surround naturalistic luminance stimuli. Data are sampled at 10 Khz.
     # In the experiments in Figure 7, we updated the intensity of a disc (annulus) in the center (surround)
